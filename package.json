@@ -5,10 +5,11 @@
   "version": "0.1.0",
   "scripts": {
     "prettier": "prettier . -w",
-    "prettier-check": "prettier . --check"
+    "prettier-check": "prettier . --check",
+    "build": "web-ext build"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.14.0"
+    "web-ext": "^8.2.0"
   }
 }
