@@ -1,4 +1,4 @@
-name: Build container
+name: Build extension
 
 on:
   push:
@@ -6,11 +6,7 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  REGISTRY_IMAGE: ghcr.io/randomairborne/mod-images
-
 permissions:
-  packages: write
   contents: read
 
 jobs:
