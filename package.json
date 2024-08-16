@@ -6,7 +6,8 @@
   "scripts": {
     "prettier": "prettier . -w",
     "prettier-check": "prettier . --check",
-    "build": "web-ext build"
+    "build": "web-ext build",
+    "web-ext-check": "web-ext lint"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

@@ -1,15 +1,21 @@
 {
-    "manifest_version": 3,
-    "name": "Pants",
-    "version": "0.1.0",
-    "description": "Redirect YouTube shorts to YouTube videos",
-    "icons": {
-      "48": "icons/pants-icon.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["pants.js"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "Pants",
+  "version": "0.1.0",
+  "description": "Redirect YouTube shorts to YouTube videos",
+  "icons": {
+    "160": "icons/pants-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["pants.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pantsaddon@valk.sh",
+      "strict_min_version": "48.0"
+    }
   }
+}
