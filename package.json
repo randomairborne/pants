@@ -1,0 +1,14 @@
+{
+  "name": "pants",
+  "type": "module",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "prettier": "prettier . -w",
+    "prettier-check": "prettier . --check"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.14.0"
+  }
+}
