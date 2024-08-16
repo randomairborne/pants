@@ -1,0 +1,20 @@
+name: Prettier check
+on:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: npm install
+        name: Install dependencies
+
+      - run: npm run web-ext-check
+        name: Check build
+
+      - run: npm run prettier-check
+        name: Check formatting
