@@ -8,7 +8,7 @@ function changeIntoPants() {
       `PANTS: pathname: "${pathname}" video code: "${videocode}" destination: "${destination}"`,
     );
     reloaded = true;
-    window.location = destination;
+    window.location.replace(destination);
   } else if (!pathname.includes("/shorts/") && reloaded) {
     reloaded = false;
   }

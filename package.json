@@ -2,7 +2,7 @@
   "name": "pants",
   "type": "module",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "prettier": "prettier . -w",
     "prettier-check": "prettier . --check",
@@ -11,7 +11,7 @@
     "publish": "web-ext sign --channel listed --amo-metadata amo.json"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "web-ext": "^8.2.0"
+    "prettier": "^3.5.3",
+    "web-ext": "^8.6.0"
   }
 }
